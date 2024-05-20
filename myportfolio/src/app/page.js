@@ -1,6 +1,6 @@
 import HeroSection from "./componets/HeroSection.1";
 import Navbar from "./componets/Navbar";
-import NavLink from "./componets/NavLink";
+import AboutSection from "./componets/AboutSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4 ">
         <HeroSection />
+        <AboutSection />
       </div>
     </main>
   );
