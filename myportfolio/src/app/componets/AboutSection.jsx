@@ -15,6 +15,8 @@ const TAB_DATA = [
         <li>CSS</li>
         <li>HTML</li>
         <li>React</li>
+        <li>Git</li>
+        <li>Latex</li>
       </ul>
     ),
   },
