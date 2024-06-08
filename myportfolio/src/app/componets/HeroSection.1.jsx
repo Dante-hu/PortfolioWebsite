@@ -26,8 +26,6 @@ const HeroSection = () => {
                 1000,
                 "a Software Developer",
                 1000,
-                "a FullStack Developer",
-                1000,
               ]}
               wrapper="span"
               speed={3}
@@ -36,17 +34,19 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#90e0fc] text-base sm:text-lg mb-6 lg:text-xl">
-            I am upcoming Software Dev & FullStack
+            I am software developer and I enjoy building new projects
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-black">
-              Hire me
+              Contact Me
             </button>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white  mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full">
-                Download CV
-              </span>
-            </button>
+            <a download href="./Resume/Dante_resume.pdf">
+              <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-white  mt-3">
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full">
+                  Download Resume
+                </span>
+              </button>
+            </a>
           </div>
         </motion.div>
         <div className="col-span-5 place-self-center mg-6 mt-4 lg:mt-0">
