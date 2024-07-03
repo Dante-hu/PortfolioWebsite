@@ -2,7 +2,6 @@ import HeroSection from "./componets/HeroSection.1";
 import Navbar from "./componets/Navbar";
 import AboutSection from "./componets/AboutSection";
 import ProjectSection from "./componets/ProjectSection";
-import Image from "next/image";
 import Contactme from "./componets/Contactme";
 
 export default function Home() {

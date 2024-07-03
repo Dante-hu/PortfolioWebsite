@@ -36,7 +36,9 @@ const projectsdata = [
     previewUrl: "/",
   },
 ];
+
 const ProjectSection = () => {
+  <section id="projects" className="py-16"></section>;
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -51,7 +53,7 @@ const ProjectSection = () => {
     animate: { y: 0, opacity: 1 },
   };
   return (
-    <section>
+    <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-5">
         My Projects
       </h2>

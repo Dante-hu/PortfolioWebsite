@@ -1,37 +1,31 @@
 "use client";
-import React, { useState } from "react";
-import Link from "next/link";
+import React, { useState, useRef } from "react";
+import { Link } from "react-scroll";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 
-/**creating an array of links that is used */
-const navlinks = [
-  {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Projects",
-    path: "#project",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
-];
-
 const Navbar = () => {
+  /**creating an array of links that is used */
+  const navlinks = [
+    {
+      title: "About",
+      href: "about",
+    },
+    {
+      title: "Projects",
+      href: "projects",
+    },
+    {
+      title: "Contact",
+      href: "contact",
+    },
+  ];
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          href={"/"}
-          className=" text-2xl md:text-5xl text-white font-semibold"
-        >
-          LOGO
-        </Link>
+    //Mobile section
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#1212] bg-opacity-100 backdrop-blur-sm">
+      <div className="flex flex-wrap items-center justify-end mx-auto px-4 py-2">
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -48,12 +42,13 @@ const Navbar = () => {
               <XMarkIcon className="h-5 w-5" />
             </button>
           )}
+          /**Non-Mobile Section* */
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-10">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-5 mx-auto">
             {navlinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <NavLink href={link.href} title={link.title} />
               </li>
             ))}
           </ul>
