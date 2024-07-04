@@ -10,7 +10,7 @@ const projectsdata = [
     title: "Portfolio Website",
     description:
       "This portfolio website is a showcase of my skills, projects, and educational background as a software engineer. Built using Next.js and React, and styled with Tailwind CSS, the website demonstrates my proficiency in modern web development technologies",
-    image: "/Images/projects/under_construction.jpg",
+    image: "/Images/thumbnail.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Dante-hu/PortfolioWebsite",
     previewUrl: "/",
