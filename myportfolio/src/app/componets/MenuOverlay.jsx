@@ -17,7 +17,7 @@ const MenuOverlay = ({ links }) => {
     },
   ];
   return (
-    <ul className="flex md:hidden mx-auto items-center justify-between px-10 backdrop-blur-sm border-b border-gray-200 bg-white/30">
+    <ul className="flex md:hidden mx-auto items-center justify-between px-10 backdrop-blur-sm ">
       {navlinks.map((link, index) => (
         <li key={index}>
           <NavLink href={link.href} title={link.title} />
