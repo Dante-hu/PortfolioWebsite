@@ -35,6 +35,16 @@ const projectsdata = [
     gitUrl: "https://github.com/Dante-hu/US-Homeschool-Enrollment-Analysis",
     previewUrl: "/",
   },
+  {
+    id: 4,
+    title: "Expense Tracker",
+    description:
+      "An expense tracker app where you can budget and spend responsively, create saving goals, and keep track of how you manage your money",
+    image: "/Images/projects/under_construction.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Dante-hu/ExpenseTracker",
+    previewUrl: "/",
+  },
 ];
 
 const ProjectSection = () => {
