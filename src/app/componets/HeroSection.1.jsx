@@ -8,13 +8,13 @@ const HeroSection = () => {
     <section>
       <div className="sm:grid-cols-12 lg:justify-center items-center ">
         <motion.div
-          intial={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           className="col-span-7 place-self-center text-center sm:text-left"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-center mr-8">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via- to-blue-200">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via-blue-500 to-blue-200">
               Hello, I&apos;m{" "}
             </span>
             <br></br>

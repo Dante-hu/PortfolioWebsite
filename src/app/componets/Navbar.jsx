@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     //Mobile section
     <nav className="fixed top-0 left-0 right-0 z-10 bg-opacity-100 bg-gray/30 backdrop-blur-sm">
-      <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-end px-4 py-2">
+      <div className="4xl:max-w-screen-xl mx-auto flex flex-wrap items-center justify-end px-4 py-2">
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
