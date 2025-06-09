@@ -1,4 +1,4 @@
-import HeroSection from "./componets/HeroSection.1";
+import HeroSection from "./componets/HeroSection";
 import Navbar from "./componets/Navbar";
 import AboutSection from "./componets/AboutSection";
 import ProjectSection from "./componets/ProjectSection";
