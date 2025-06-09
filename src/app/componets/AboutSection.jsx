@@ -9,15 +9,16 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>C++</li>
         <li>Python</li>
-        <li>Java</li>
         <li>JavaScript</li>
-        <li>CSS</li>
-        <li>HTML</li>
+        <li>C++</li>
+        <li>Java</li>
         <li>React</li>
-        <li>Git</li>
-        <li>Latex</li>
+        <li>NextJS</li>
+        <li>NodeJS</li>
+        <li>PyTorch</li>
+        <li>Scikit-learn</li>
+        <li>PostgreSQL</li>
       </ul>
     ),
   },
@@ -25,8 +26,8 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul>
-        <li>University of Ontario Tech, BSc(Hons) in Computer Science</li>
+      <ul className="list-disc pl-2">
+        <li>Ontario Tech University, BSc(Hons) in Computer Science</li>
       </ul>
     ),
   },
@@ -54,13 +55,19 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base md:text-lg ">
-            I am an aspiring computer science student at Ontario Tech
-            University, where I am expanding my journey by creating projects and
-            developing my software skills. My expertise spans a multitude of
-            areas that will further my web development and AI skills. I am
-            particularly passionate about fullstack development and am venturing
-            into the exciting fields of artificial intelligence and machine
-            learning, continuously building and honing my skills.
+            I’m a dedicated Computer Science student at Ontario Tech University,
+            fueled by a passion for crafting innovative software solutions that
+            make a difference. Immersed in full-stack development, I thrive on
+            building seamless, responsive web applications using tools like
+            Python, JavaScript, TypeScript, Next.js, Node.js, and Tailwind CSS,
+            knowing each line of code shapes user experiences profoundly. My
+            excitement extends to the dynamic fields of artificial intelligence
+            and machine learning, where I’ve honed skills with PyTorch,
+            Scikit-learn, TensorFlow, and OpenCV to tackle real-world
+            challenges. From optimizing performance to designing intuitive
+            interfaces, I’m driven to create impactful projects, continuously
+            expanding my expertise to push the boundaries of technology and
+            empower users.
           </p>
           <div className="flex flex-row mt-8">
             <TabButton

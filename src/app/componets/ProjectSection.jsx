@@ -17,12 +17,12 @@ const projectsdata = [
   },
   {
     id: 2,
-    title: "BlackJack",
+    title: "Mindful Moments",
     description:
-      "A full-stack Blackjack game featuring a JavaScript, CSS, and HTML frontend with a Java backend. Utilizes a RESTful API for resource management and supports multiple clients through multi-threading and socket programming. Developed in IntelliJ IDEA with version control via Git.",
-    image: "/Images/projects/under_construction.jpg",
+      "Developed and fine-tuned YOLOv8n models on Balanced Speed Sign (4,000 images) and LISA Traffic Sign (11,000 images) datasets using Python, PyTorch, and OpenCV, achieving a 93% mAP, with a 7% accuracy boost via Weighted Boxes Fusion, class imbalance correction through OpenCV augmentation, and optimized 30 FPS evaluation on Google Colab T4 GPU.",
+    image: "/Images/projects/mental_health.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/Dante-hu/Blackjack",
+    gitUrl: "https://github.com/Dante-hu/Mindful-Moments",
     previewUrl: "/",
   },
   {
@@ -37,12 +37,32 @@ const projectsdata = [
   },
   {
     id: 4,
-    title: "Expense Tracker",
+    title: "Travel Diary App",
     description:
-      "An expense tracker app where you can budget and spend responsively, create saving goals, and keep track of how you manage your money",
-    image: "/Images/projects/under_construction.jpg",
+      "The Travel Diary App is a mobile application designed for users to document and preserve their travel experiences, including locations, photos, and personal notes, with a focus on privacy and simplicity.",
+    image: "/Images/projects/journal.jpg",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/harveyliao/Mobile_course_project",
+    previewUrl: "/",
+  },
+  {
+    id: 5,
+    title: "Music Recommendation",
+    description:
+      "Developed a Music Recommendation AI using Python, PyTorch, and NLP to deliver personalized Spotify song suggestions based on user emotions, achieving 99% accuracy with a custom EmotionNet model and an interactive Streamlit web app.",
+    image: "/Images/projects/music.jpg",
+    tag: ["All", "Web", "AI"],
+    gitUrl: "https://github.com/Dante-hu/Music-Recommendation-System",
+    previewUrl: "/",
+  },
+  {
+    id: 6,
+    title: "Steam Clone",
+    description:
+      "A dynamic Steam clone web app replicating the gaming platform’s core features, allowing users to browse, and manage a library of games with a sleek, responsive interface.",
+    image: "/Images/projects/gaming.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/Dante-hu/ExpenseTracker",
+    gitUrl: "https://github.com/Dante-hu/Steam-Clone",
     previewUrl: "/",
   },
 ];
@@ -77,6 +97,16 @@ const ProjectSection = () => {
           onClick={handleTagchange}
           name="Web"
           isSelected={tag === "Web"}
+        />
+        <ProjectTag
+          onClick={handleTagchange}
+          name="AI"
+          isSelected={tag === "AI"}
+        />
+        <ProjectTag
+          onClick={handleTagchange}
+          name="Mobile"
+          isSelected={tag === "Mobile"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
