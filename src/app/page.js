@@ -6,9 +6,9 @@ import Contactme from "./componets/Contactme";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212] container ">
+    <main className="bg-[#121212] min-h-screen">
       <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4 ">
+      <div className="max-w-screen-xl mx-auto px-6 sm:px-12 pt-24">
         <HeroSection />
         <AboutSection />
         <ProjectSection />

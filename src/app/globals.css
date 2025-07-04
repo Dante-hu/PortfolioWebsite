@@ -31,3 +31,24 @@ body {
     text-wrap: balance;
   }
 }
+
+@media (min-width: 768px) {
+
+  /* md breakpoint and up */
+  nav .menu {
+    margin-left: auto;
+    /* Pushes the menu to the right */
+  }
+
+  nav .menu ul {
+    justify-content: flex-end;
+    /* Ensures links align to the right */
+  }
+}
+
+nav {
+  height: auto;
+  /* Adjusts height to content */
+  overflow: hidden;
+  /* Prevents background stretch */
+}
